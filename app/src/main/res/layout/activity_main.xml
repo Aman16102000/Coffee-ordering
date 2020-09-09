@@ -1,0 +1,141 @@
+   <ScrollView
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/name"
+        android:hint="Name"
+        android:inputType=
+            "textCapSentences|textAutoCorrect"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Quantity"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:orientation="horizontal"
+        android:background="#47dada"
+        android:layout_margin="16dp">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_margin="16dp"
+            android:onClick="minus"
+            android:background="#ffffff"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/Quantity"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="	#000000"
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_margin="16dp"
+            android:onClick="add"
+            android:id="@+id/inc"
+            android:background="#ffffff"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        android:textSize="20sp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_margin="16dp"/>
+    <CheckBox
+        android:id="@+id/wc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Whip cream"
+        />
+    <CheckBox
+        android:id="@+id/ch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Choco"
+        />
+    <CheckBox
+        android:id="@+id/vn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Vanilla"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="price"
+        android:textSize="22sp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/price"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+
+        />
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#000000"
+        android:id="@+id/ordersummary"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Order"
+        android:onClick="SubmitOrder"
+        android:background="#ffffff"/>
+
+</LinearLayout>
+</ScrollView>
